@@ -1,10 +1,8 @@
 window.onload = function() {
-    document.querySelector("#generate").onclick = function(){
-        console.log("Вы нажали на кнопку generate");
-    }
-    document.querySelector("#copy").onclick = function(){
-        console.log("Вы нажали на кнопку Copy");
-    }
+
+    let inputArea = document.querySelector("#inputArea");
+
+    // let inputLength = document.querySelector("#inputLength");
 
     var generatePassword = (
         length = 20,
@@ -14,5 +12,18 @@ window.onload = function() {
             .map((x) => characters[x % characters.length])
             .join('')
 
-    console.log(generatePassword())
+    document.getElementById('generate').addEventListener('click', function() {
+        let password = generatePassword();
+        inputArea.value = password;
+        console.log(password);
+    });
+
+    document.getElementById('copy').addEventListener('click', function() {
+        navigator.clipboard.writeText(inputArea.value).then(function() {
+            console.log('Copying to clipboard was successful!');
+        }, function(err) {
+            console.error('Could not copy text: ', err);
+        });
+    });
+
 }

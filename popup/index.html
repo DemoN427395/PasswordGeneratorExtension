@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
         <link rel="stylesheet" href="style.css">
     </head>
   <body>
@@ -12,10 +13,8 @@
           <tr>
             <th colspan="2">
                 <input type="text"
-                id="name"
-                required minlength="8" 
-                maxlength="12"
-                size="10" />  <!-- size длина input -->
+                id="inputArea"
+                disabled/>
             </th>
           </tr>
         </thead>

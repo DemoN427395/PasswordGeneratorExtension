@@ -33,16 +33,21 @@ h1 {
 }
 
 input {
+    color: #0000FF; 
     border: .15em solid #0000FF;
     border-radius: .3em;
+    user-select: text;
     width: 20em;
     height: 2em;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
 }
-input:focus {
-    border: .15em solid #0000FF;
-    border-radius: .3em;
-    outline: none;
+
+input:hover {
+    opacity: 1;
 }
+
 button {
     margin: 10% 0 10% 0;
     width: 100%;
