@@ -25,5 +25,4 @@ window.onload = function() {
             console.error('Could not copy text: ', err);
         });
     });
-
 }
