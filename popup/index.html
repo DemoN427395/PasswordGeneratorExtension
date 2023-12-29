@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="wrapper">
+      <h1>Password Generator</h1>
+    <table>
+        <thead>
+          <tr>
+            <th colspan="2">
+                <input type="text"
+                id="name"
+                required minlength="8" 
+                maxlength="12"
+                size="10" />  <!-- size длина input -->
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+                <div class="wrapper_buttons">
+                    <button type="submit" id="generate">Generate</button>
+                    <button type="submit" id="copy">Copy</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
