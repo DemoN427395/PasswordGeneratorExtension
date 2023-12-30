@@ -10,7 +10,6 @@ window.onload = function() {
         output.innerHTML = this.value;
     }
 
-
     var generatePassword = (
         length = output.innerHTML,
         characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@-#$'
